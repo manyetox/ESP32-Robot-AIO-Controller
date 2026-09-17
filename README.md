@@ -8,7 +8,7 @@ The board integrates an **ESP32-WROOM-32UE**, **four independent brushed DC moto
 
 The controller has been **manufactured, hand-assembled and fully tested**, and the finished board is operational.
 
-![Assembled Robot AIO Controller](media/robot-aio-assembled.jpg)
+![Assembled Robot AIO Controller](Media/PCB-Image.png)
 
 > **Status:** Hardware tested and working
 > **PCB:** 8-layer, 50 × 46.2 mm
@@ -39,27 +39,20 @@ It was originally designed with **Robot Wars / combat robotics and RC-car projec
 
 ---
 
-## Demo
+## Hardware Images
 
-The final PCB has been assembled and tested successfully.
+The final PCB shown above has been assembled and tested successfully. The repository also includes the design views below.
 
-### Hardware
+### PCB Layout
 
-![PCB Top View](media/pcb-top.jpg)
+![Eight-layer PCB layout](Media/PCB-Layout.png)
 
-![PCB Bottom View](media/pcb-bottom.jpg)
+### Schematic
 
-### Working Prototype
+![Robot AIO controller schematic](Media/Schematic.png)
 
-![Controller Installed in Robot](media/controller-in-robot.jpg)
-
-### Video
-
-[▶ Watch the working prototype](media/robot-demo.mp4)
-
-A GIF can also be placed here for a preview directly inside the README:
-
-![Robot AIO Demo](media/robot-demo.gif)
+> A demonstration video is not currently included in this repository. To add
+> one later, place it in the `Media` directory and link it here.
 
 ---
 
@@ -495,7 +488,7 @@ The manufactured prototype has been **assembled and tested successfully**.
 
 Verified functionality includes the core controller hardware, power system and motor-control architecture.
 
-![Working PCB](media/working-pcb.jpg)
+See the [assembled working PCB](Media/PCB-Image.png), [PCB layout](Media/PCB-Layout.png), and [schematic](Media/Schematic.png) included in this repository.
 
 This repository contains the design used to manufacture the working prototype.
 
@@ -535,29 +528,28 @@ The repository therefore contains the editable schematic and PCB rather than onl
 
 # Repository Structure
 
-A suggested repository layout is:
+The repository is organised as follows:
 
 ```text
-Robot-AIO-ESP32/
+ESP32-Robot-AIO-Controller/
 │
 ├── README.md
 │
-├── hardware/
-│   ├── robot-aio.kicad_pro
-│   ├── robot-aio.kicad_sch
-│   └── robot-aio.kicad_pcb
+├── Firmware/
+│   └── phone_controlled_2servo.ino
 │
-├── media/
-│   ├── robot-aio-assembled.jpg
-│   ├── pcb-top.jpg
-│   ├── pcb-bottom.jpg
-│   ├── controller-in-robot.jpg
-│   ├── working-pcb.jpg
-│   ├── robot-demo.gif
-│   └── robot-demo.mp4
+├── Hardware/
+│   └── robot aio esp32/
+│       ├── fabrication-toolkit-options.json
+│       ├── robot aio esp32 manuel solder 8 layer.kicad_pcb
+│       ├── robot aio esp32 manuel solder 8 layer.kicad_prl
+│       ├── robot aio esp32 manuel solder 8 layer.kicad_pro
+│       └── robot aio esp32 manuel solder 8 layer.kicad_sch
 │
-└── firmware/
-    └── examples/
+└── Media/
+    ├── PCB-Image.png
+    ├── PCB-Layout.png
+    └── Schematic.png
 ```
 
 ---
